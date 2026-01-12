@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Pay Calculator</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- PWA Manifest -->
+  <link rel="manifest" href="/manifest.json" />
+  <meta name="theme-color" content="#111111" />
+
+  <!-- Favicons / App Icons -->
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="Pay Calculator" />
+</head>
+
+  </head>
+
+  <body>
+    <main class="card">
+      <h1>Pay Calculator</h1>
+
+      <section class="grid">
+        <button id="btn-regular">Regular Walk (+$13.00)</button>
+        <button id="btn-double">Double Walk (+$19.50)</button>
+        <button id="btn-potty">Potty Break (+$6.50)</button>
+        <button id="btn-petsit">Pet Sit (+$45.00)</button>
+      </section>
+
+      <section class="summary">
+        <h2>Summary</h2>
+        <pre id="summaryText"></pre>
+        <div class="total">
+          Total: <span id="totalText">$0.00</span>
+        </div>
+      </section>
+
+      <section class="actions">
+        <button id="btn-undo" class="secondary">Undo</button>
+        <button id="btn-reset" class="danger">Reset</button>
+      </section>
+
+      <p class="hint">
+        Tip: Install this app from your browser menu (“Add to Home Screen” / “Install app”).
+      </p>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
