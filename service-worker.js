@@ -1,4 +1,4 @@
-const CACHE_NAME = "paycalc-v1";
+const CACHE_NAME = "paycalc-v2";
 const ASSETS = [
   "./",
   "./index.html",
