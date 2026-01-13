@@ -84,3 +84,56 @@ pre {
   color: #aaaaaa;
   font-size: 13px;
 }
+
+.panel {
+  margin-top: 14px;
+  padding: 12px;
+  border: 1px solid #2a2a2a;
+  border-radius: 12px;
+  background: #101010;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+input {
+  width: 100%;
+  padding: 12px 10px;
+  border-radius: 10px;
+  border: 1px solid #2a2a2a;
+  background: #0f0f0f;
+  color: #f3f3f3;
+  font-size: 16px;
+}
+
+.rates {
+  display: grid;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.rates label {
+  display: grid;
+  gap: 6px;
+  color: #cfcfcf;
+}
+
+.muted {
+  display: block;
+  margin-top: 8px;
+  color: #aaaaaa;
+  font-size: 13px;
+}
+
+details > summary {
+  cursor: pointer;
+  list-style: none;
+}
+
+details > summary::-webkit-details-marker {
+  display: none;
+}
+

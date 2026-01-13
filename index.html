@@ -31,6 +31,46 @@
         <button id="btn-petsit">Pet Sit (+$45.00)</button>
       </section>
 
+      <!-- NEW: Misc input -->
+      <section class="panel">
+        <h2>Misc</h2>
+        <div class="row">
+          <input id="miscAmount" type="number" step="0.01" placeholder="Enter amount (e.g., 12.50)" />
+          <button id="btn-misc-add">Add Misc</button>
+        </div>
+        <small class="muted">Use this for tips, extra fees, custom charges, etc.</small>
+      </section>
+
+      <!-- NEW: Rates editor -->
+      <details class="panel">
+        <summary><strong>Rates</strong> (tap to edit)</summary>
+
+        <div class="rates">
+          <label>Regular Walk ($)
+            <input id="rate-regular" type="number" step="0.01" />
+          </label>
+
+          <label>Double Walk ($)
+            <input id="rate-double" type="number" step="0.01" />
+          </label>
+
+          <label>Potty Break ($)
+            <input id="rate-potty" type="number" step="0.01" />
+          </label>
+
+          <label>Pet Sit ($)
+            <input id="rate-petsit" type="number" step="0.01" />
+          </label>
+        </div>
+
+        <div class="actions">
+          <button id="btn-rates-save" class="secondary">Save Rates</button>
+          <button id="btn-rates-reset" class="danger">Reset to Defaults</button>
+        </div>
+
+        <small class="muted">Rates are saved on this device (localStorage).</small>
+      </details>
+
       <section class="summary">
         <h2>Summary</h2>
         <pre id="summaryText"></pre>
